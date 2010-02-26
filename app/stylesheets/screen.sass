@@ -1,0 +1,18 @@
+@import blueprint/reset.sass
+@import partials/base.sass
+@import blueprint
+@import blueprint/modules/scaffolding.sass
++blueprint-scaffolding("body.bp")
+body.bp
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  #container
+    +container
+  #header, #footer
+    +column(!blueprint_grid_columns)
+  #content
+    +column(!blueprint_grid_columns)
+form.bp
+  +blueprint-form
