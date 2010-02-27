@@ -1,2 +1,5 @@
 - @bookmarks.each do |bookmark|
-	.bookmark= bookmark.url
+	.bookmark
+		.title= bookmark.title
+		.url= bookmark.url
+		.url_short= bookmark.url_short
