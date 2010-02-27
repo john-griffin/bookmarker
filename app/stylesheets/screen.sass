@@ -1,8 +1,9 @@
 @import blueprint/reset.sass
 @import partials/base.sass
 @import blueprint
-@import blueprint/modules/scaffolding.sass
+@import blueprint/scaffolding.sass
 @import compass/utilities/links.sass
+
 +blueprint-scaffolding("body.bp")
 +blueprint-typography("body.bp")
 
@@ -14,6 +15,9 @@ body.bp
 		+container
 	#header, #footer
 		+column(!blueprint_grid_columns)
+	#footer
+		text-align: center
+		line-height: 4em
 	#header
 		font-weight: bold
 		font-size: 2em

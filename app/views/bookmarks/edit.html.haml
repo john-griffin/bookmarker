@@ -1,5 +1,6 @@
 %h2= @bookmark.title
 %h3= @bookmark.url
+%h4= @bookmark.url_short
 
 - form_for @bookmark do |f|
 	= f.label :tag_list, "Tags"
