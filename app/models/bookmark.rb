@@ -15,5 +15,9 @@ class Bookmark < ActiveRecord::Base
       agent.user_agent_alias = 'Mac Safari'
     }
     self.title = a.get(url).title || url
+    
+    
+    bitly = Bitly.new("splitstate", "R_c8f065fed0cdeec065d93c9d55823acc")
+    self.url_short = bitly.shorten(url).short_url
   end
 end

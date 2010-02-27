@@ -2,5 +2,6 @@
 %h3= @bookmark.url
 
 - form_for @bookmark do |f|
+	= f.label :tag_list, "Tags"
 	= f.text_field :tag_list
 	= f.submit "Save", :disable_with => 'Saving...'
