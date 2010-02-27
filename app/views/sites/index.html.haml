@@ -1,2 +1,4 @@
-%h1 Sites#index
-%p Find me in app/views/sites/index.html.haml
+= link_to 'Bookmark somthing!', new_bookmark_path
+- @sites.each do |site|
+	.site
+		= link_to site.url, site_bookmarks_path(site)

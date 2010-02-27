@@ -2,17 +2,25 @@
 @import partials/base.sass
 @import blueprint
 @import blueprint/modules/scaffolding.sass
+@import compass/utilities/links.sass
 +blueprint-scaffolding("body.bp")
++blueprint-typography("body.bp")
+
 body.bp
-  +blueprint-typography(true)
-  +blueprint-utilities
-  +blueprint-debug
-  +blueprint-interaction
-  #container
-    +container
-  #header, #footer
-    +column(!blueprint_grid_columns)
-  #content
-    +column(!blueprint_grid_columns)
-form.bp
-  +blueprint-form
+	+blueprint-utilities
+	+blueprint-debug
+	+blueprint-interaction
+	#container
+		+container
+	#header, #footer
+		+column(!blueprint_grid_columns)
+	#header
+		font-weight: bold
+		font-size: 2em
+		color: blue
+		a
+			+hover-link
+	#content
+		+column(!blueprint_grid_columns)
+	form
+		+blueprint-form
