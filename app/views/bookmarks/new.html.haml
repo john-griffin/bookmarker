@@ -1,3 +1,7 @@
+.top
+	.back
+		= link_to "<< Back to sites", sites_path
+
 %h4 Please enter the URL you wish to bookmark
 - form_for @bookmark, :class => "inline" do |f|
 	= f.text_field :url, :class => "title"

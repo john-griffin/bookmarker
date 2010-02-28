@@ -1,5 +1,19 @@
-- @bookmarks.each do |bookmark|
-	.bookmark
-		.title= bookmark.title
-		.url= bookmark.url
-		.url_short= bookmark.url_short
+.top
+	.back
+		= link_to "<< Back to sites", sites_path
+	.add
+		= link_to 'Bookmark somthing!', new_bookmark_path, :class => "button matte-blue"
+.bookmarks
+	- @bookmarks.each do |bookmark|
+		.bookmark
+			.title= bookmark.title
+			.line
+				.label Full url
+				.info= link_to bookmark.url, bookmark.url, :target => "_blank"
+			.line
+				.label Short url
+				.info
+					%input{:value => bookmark.url_short}
+			.line
+				.label Tags
+				.info= bookmark.tag_list

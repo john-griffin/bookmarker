@@ -36,6 +36,32 @@ body.bp
 			+hover-link
 	#content
 		+column(!blueprint_grid_columns)
+		.top
+			line-height: 3em
+			+column(24,true)
+			.back
+				+column(12)
+			.add
+				+column(12, true)
+				a
+					float: right
+		.bookmarks
+			.bookmark
+				margin: 0.5em
+				padding: 0.5em 0
+				+border-radius(0.3em)
+				background-color: #A9D0F5
+				+prepend(0.5)
+				+column(23,true)
+				.title
+					font-size: 2em
+				.line
+					line-height: 2em
+					.label
+						font-weight: bold
+						+column(2)
+					.info
+						+column(20,true)
 		.sites
 			+column(14)
 			.site
@@ -53,7 +79,9 @@ body.bp
 					font-size: 2em
 					+column(10)
 		.add
-			+column(8, true)
+			+column(8)
+			a
+				float: right
 	form
 		+blueprint-form
 		input.title
