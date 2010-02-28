@@ -8,3 +8,7 @@ Rails::Initializer.run do |config|
   config.gem "bitly"
   config.time_zone = 'UTC'
 end
+
+ActionView::Base.field_error_proc = Proc.new { |html_tag, instance|
+  "<span class=\"fieldWithErrors\">#{html_tag}</span>" 
+}

@@ -4,5 +4,7 @@
 
 %h4 Please enter the URL you wish to bookmark
 - form_for @bookmark, :class => "inline" do |f|
+	- unless f.error_messages.empty?
+		.error= f.error_messages
 	= f.text_field :url, :class => "title"
 	= f.submit "Bookmark", :disable_with => 'Bookmarking...', :class => "button"

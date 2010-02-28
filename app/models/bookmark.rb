@@ -3,6 +3,9 @@ class Bookmark < ActiveRecord::Base
   
   acts_as_taggable
   
+  validates_presence_of :url, :on => :create, :message => "must be entered"
+  validates_format_of :url, :with => /^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$/ix, :message => "must be valid"
+  
   def before_create
     attach_site!
     update_title!
@@ -31,4 +34,5 @@ class Bookmark < ActiveRecord::Base
     bitly = Bitly.new("splitstate", "R_c8f065fed0cdeec065d93c9d55823acc")
     self.url_short = bitly.shorten(url).short_url
   end
+  
 end
