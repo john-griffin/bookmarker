@@ -1,4 +1,4 @@
-= link_to 'Bookmark somthing!', new_bookmark_path
+= link_to 'Bookmark somthing!', new_bookmark_path, :class => "button matte-blue"
 - @sites.each do |site|
 	.site
 		= link_to site.url, site_bookmarks_path(site)

@@ -3,11 +3,15 @@
 @import blueprint
 @import blueprint/scaffolding.sass
 @import compass/utilities/links.sass
+@import fancy_buttons.sass
 
 +blueprint-scaffolding("body.bp")
-+blueprint-typography("body.bp")
+
+!green = darken(#57b42c, 8)
+!blue = adjust_hue(!green, 110)
 
 body.bp
+	+blueprint-typography(true)
 	+blueprint-utilities
 	+blueprint-debug
 	+blueprint-interaction
@@ -28,3 +32,29 @@ body.bp
 		+column(!blueprint_grid_columns)
 	form
 		+blueprint-form
+		input.title
+			width: 40em
+		.form_line
+			line-height: 2em
+			height: 2em
+			.label
+				+column(4)
+			.info
+				+column(20, true)
+		.tags
+			margin-top: 2em
+				
+	a.button, button, input.button
+		+fancy-button-structure
+		+fancy-button-colors
+		margin: 0 2px
+		&.light
+			+fancy-button-colors-matte(#ddd)
+		&.matte-blue
+			+fancy-button-colors-matte(!blue)
+		&.green
+			+fancy-button-colors(!green)
+		&.blue
+			+fancy-button-size(32px, 32px, 3px)
+			+fancy-button-colors(!blue)
+		

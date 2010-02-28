@@ -1,8 +1,17 @@
 %h2= @bookmark.title
-%h3= @bookmark.url
-%h4= @bookmark.url_short
 
-- form_for @bookmark do |f|
-	= f.label :tag_list, "Tags"
-	= f.text_field :tag_list
-	= f.submit "Save", :disable_with => 'Saving...'
+- form_for @bookmark, :class => "inline" do |f|
+	.form_line
+		.label
+			= f.label :url, "Full Url"
+		.info
+			= link_to @bookmark.url, @bookmark.url, :target => "_blank"
+	.form_line
+		.label
+			= f.label :url_short, "Short Url (bit.ly)"
+		.info
+			= link_to @bookmark.url_short, @bookmark.url_short, :target => "_blank"
+	.tags
+		Enter tags for this bookmark (comma separated)
+		= f.text_field :tag_list, :class => "title"
+		= f.submit "Tag", :disable_with => 'Tagging...', :class => "button"
