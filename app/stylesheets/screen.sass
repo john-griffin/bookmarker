@@ -10,6 +10,12 @@
 !green = darken(#57b42c, 8)
 !blue = adjust_hue(!green, 110)
 
+=border-radius(!radius)
+	border-radius = !radius
+	-moz-border-radius = !radius
+	-webkit-border-radius = !radius
+
+
 body.bp
 	+blueprint-typography(true)
 	+blueprint-utilities
@@ -30,6 +36,24 @@ body.bp
 			+hover-link
 	#content
 		+column(!blueprint_grid_columns)
+		.sites
+			+column(14)
+			.site
+				+column(14)
+				line-height: 3em
+				margin: 0.2em
+				.count
+					text-align: center
+					background: #222
+					font-size: 2.5em
+					+column(1.5)
+					+border-radius(0.3em)
+					color: #f2f2f2
+				.link
+					font-size: 2em
+					+column(10)
+		.add
+			+column(8, true)
 	form
 		+blueprint-form
 		input.title
