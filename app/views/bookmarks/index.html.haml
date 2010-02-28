@@ -6,7 +6,7 @@
 .bookmarks
 	- @bookmarks.each do |bookmark|
 		.bookmark
-			.title= bookmark.title
+			.title= link_to bookmark.title, edit_site_bookmark_path(bookmark.site, bookmark)
 			.line
 				.label Full url
 				.info= link_to bookmark.url, bookmark.url, :target => "_blank"

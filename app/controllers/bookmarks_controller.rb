@@ -23,7 +23,7 @@ class BookmarksController < ApplicationController
   def update
     @bookmark = Bookmark.find(params[:id])
     if @bookmark.update_attributes(params[:bookmark])
-      redirect_to(sites_url)
+      redirect_to(site_bookmarks_url(@bookmark.site))
     else
       render :action => "edit"
     end

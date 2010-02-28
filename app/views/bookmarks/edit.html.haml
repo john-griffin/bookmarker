@@ -1,3 +1,7 @@
+.top
+	.back
+		= link_to "<< Back to sites", sites_path
+
 %h2= @bookmark.title
 
 - form_for @bookmark, :class => "inline" do |f|
