@@ -431,10 +431,14 @@ body.bp #content .search {
   float: right;
 }
 /* line 41, ../../../app/stylesheets/screen.sass */
+body.bp #content .search input.title {
+  width: 45em;
+}
+/* line 43, ../../../app/stylesheets/screen.sass */
 body.bp #content .search input.button {
   margin-right: 0.5em;
 }
-/* line 43, ../../../app/stylesheets/screen.sass */
+/* line 45, ../../../app/stylesheets/screen.sass */
 body.bp #content .top {
   line-height: 3em;
   display: inline;
@@ -446,7 +450,7 @@ body.bp #content .top {
 * html body.bp #content .top {
   overflow-x: hidden;
 }
-/* line 46, ../../../app/stylesheets/screen.sass */
+/* line 48, ../../../app/stylesheets/screen.sass */
 body.bp #content .top .back {
   display: inline;
   float: left;
@@ -457,7 +461,7 @@ body.bp #content .top .back {
 * html body.bp #content .top .back {
   overflow-x: hidden;
 }
-/* line 48, ../../../app/stylesheets/screen.sass */
+/* line 50, ../../../app/stylesheets/screen.sass */
 body.bp #content .top .add {
   display: inline;
   float: left;
@@ -468,11 +472,11 @@ body.bp #content .top .add {
 * html body.bp #content .top .add {
   overflow-x: hidden;
 }
-/* line 50, ../../../app/stylesheets/screen.sass */
+/* line 52, ../../../app/stylesheets/screen.sass */
 body.bp #content .top .add a {
   float: right;
 }
-/* line 52, ../../../app/stylesheets/screen.sass */
+/* line 54, ../../../app/stylesheets/screen.sass */
 body.bp #content .bookmarks {
   display: inline;
   float: left;
@@ -483,7 +487,7 @@ body.bp #content .bookmarks {
 * html body.bp #content .bookmarks {
   overflow-x: hidden;
 }
-/* line 54, ../../../app/stylesheets/screen.sass */
+/* line 56, ../../../app/stylesheets/screen.sass */
 body.bp #content .bookmarks .bookmark {
   margin: 0.5em;
   padding: 0.5em 0;
@@ -501,11 +505,11 @@ body.bp #content .bookmarks .bookmark {
 * html body.bp #content .bookmarks .bookmark {
   overflow-x: hidden;
 }
-/* line 61, ../../../app/stylesheets/screen.sass */
+/* line 63, ../../../app/stylesheets/screen.sass */
 body.bp #content .bookmarks .bookmark .title {
   font-size: 2em;
 }
-/* line 63, ../../../app/stylesheets/screen.sass */
+/* line 65, ../../../app/stylesheets/screen.sass */
 body.bp #content .bookmarks .bookmark .title a {
   text-decoration: none;
 }
@@ -513,11 +517,11 @@ body.bp #content .bookmarks .bookmark .title a {
 body.bp #content .bookmarks .bookmark .title a:hover {
   text-decoration: underline;
 }
-/* line 65, ../../../app/stylesheets/screen.sass */
+/* line 67, ../../../app/stylesheets/screen.sass */
 body.bp #content .bookmarks .bookmark .line {
   line-height: 2em;
 }
-/* line 67, ../../../app/stylesheets/screen.sass */
+/* line 69, ../../../app/stylesheets/screen.sass */
 body.bp #content .bookmarks .bookmark .line .label {
   font-weight: bold;
   display: inline;
@@ -529,7 +533,7 @@ body.bp #content .bookmarks .bookmark .line .label {
 * html body.bp #content .bookmarks .bookmark .line .label {
   overflow-x: hidden;
 }
-/* line 70, ../../../app/stylesheets/screen.sass */
+/* line 72, ../../../app/stylesheets/screen.sass */
 body.bp #content .bookmarks .bookmark .line .info {
   display: inline;
   float: left;
@@ -540,7 +544,7 @@ body.bp #content .bookmarks .bookmark .line .info {
 * html body.bp #content .bookmarks .bookmark .line .info {
   overflow-x: hidden;
 }
-/* line 72, ../../../app/stylesheets/screen.sass */
+/* line 74, ../../../app/stylesheets/screen.sass */
 body.bp #content .sites {
   display: inline;
   float: left;
@@ -551,7 +555,7 @@ body.bp #content .sites {
 * html body.bp #content .sites {
   overflow-x: hidden;
 }
-/* line 74, ../../../app/stylesheets/screen.sass */
+/* line 76, ../../../app/stylesheets/screen.sass */
 body.bp #content .sites .site {
   display: inline;
   float: left;
@@ -564,7 +568,7 @@ body.bp #content .sites .site {
 * html body.bp #content .sites .site {
   overflow-x: hidden;
 }
-/* line 78, ../../../app/stylesheets/screen.sass */
+/* line 80, ../../../app/stylesheets/screen.sass */
 body.bp #content .sites .site .count {
   text-align: center;
   background: #222;
@@ -582,7 +586,7 @@ body.bp #content .sites .site .count {
 * html body.bp #content .sites .site .count {
   overflow-x: hidden;
 }
-/* line 85, ../../../app/stylesheets/screen.sass */
+/* line 87, ../../../app/stylesheets/screen.sass */
 body.bp #content .sites .site .link {
   font-size: 2em;
   display: inline;
@@ -594,7 +598,7 @@ body.bp #content .sites .site .link {
 * html body.bp #content .sites .site .link {
   overflow-x: hidden;
 }
-/* line 89, ../../../app/stylesheets/screen.sass */
+/* line 91, ../../../app/stylesheets/screen.sass */
 body.bp #content .add a {
   margin-right: 0.5em;
   float: right;
@@ -663,16 +667,16 @@ body.bp form textarea {
   width: 390px;
   height: 250px;
 }
-/* line 94, ../../../app/stylesheets/screen.sass */
+/* line 96, ../../../app/stylesheets/screen.sass */
 body.bp form input.title {
   width: 40em;
 }
-/* line 96, ../../../app/stylesheets/screen.sass */
+/* line 98, ../../../app/stylesheets/screen.sass */
 body.bp form .form_line {
   line-height: 2em;
   height: 2em;
 }
-/* line 99, ../../../app/stylesheets/screen.sass */
+/* line 101, ../../../app/stylesheets/screen.sass */
 body.bp form .form_line .label {
   display: inline;
   float: left;
@@ -683,7 +687,7 @@ body.bp form .form_line .label {
 * html body.bp form .form_line .label {
   overflow-x: hidden;
 }
-/* line 101, ../../../app/stylesheets/screen.sass */
+/* line 103, ../../../app/stylesheets/screen.sass */
 body.bp form .form_line .info {
   display: inline;
   float: left;
@@ -694,11 +698,11 @@ body.bp form .form_line .info {
 * html body.bp form .form_line .info {
   overflow-x: hidden;
 }
-/* line 103, ../../../app/stylesheets/screen.sass */
+/* line 105, ../../../app/stylesheets/screen.sass */
 body.bp form .tags {
   margin-top: 2em;
 }
-/* line 106, ../../../app/stylesheets/screen.sass */
+/* line 108, ../../../app/stylesheets/screen.sass */
 body.bp a.button, body.bp button, body.bp input.button {
   font-family: "Lucida Grande", Lucida, Arial, sans_serif;
   background: url('/images/button_bg.png?1267394784') repeat-x bottom left;
@@ -783,7 +787,7 @@ body.bp a.button:active, body.bp button:active, body.bp input.button:active {
   text-shadow: black 0px -1px -1px;
   color: white;
 }
-/* line 110, ../../../app/stylesheets/screen.sass */
+/* line 112, ../../../app/stylesheets/screen.sass */
 body.bp a.button.light, body.bp button.light, body.bp input.button.light {
   background-color: white;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, white), color-stop(100%, #cecece));
@@ -819,7 +823,7 @@ body.bp a.button.light:active, body.bp button.light:active, body.bp input.button
   text-shadow: white 0px -1px -1px;
   color: #222222;
 }
-/* line 112, ../../../app/stylesheets/screen.sass */
+/* line 114, ../../../app/stylesheets/screen.sass */
 body.bp a.button.matte-blue, body.bp button.matte-blue, body.bp input.button.matte-blue {
   background-color: #0059b7;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #3680ce), color-stop(100%, #1e4b7a));
@@ -855,7 +859,7 @@ body.bp a.button.matte-blue:active, body.bp button.matte-blue:active, body.bp in
   text-shadow: #000c18 0px -1px -1px;
   color: white;
 }
-/* line 114, ../../../app/stylesheets/screen.sass */
+/* line 116, ../../../app/stylesheets/screen.sass */
 body.bp a.button.green, body.bp button.green, body.bp input.button.green {
   background-color: #3ab700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #9ee080), color-stop(10%, #66ce36), color-stop(50%, #418621), color-stop(50%, #3b7a1e), color-stop(100%, #4fa328));
@@ -891,7 +895,7 @@ body.bp a.button.green:active, body.bp button.green:active, body.bp input.button
   text-shadow: #081800 0px -1px -1px;
   color: white;
 }
-/* line 116, ../../../app/stylesheets/screen.sass */
+/* line 118, ../../../app/stylesheets/screen.sass */
 body.bp a.button.matte-green, body.bp button.matte-green, body.bp input.button.matte-green {
   background-color: #3ab700;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #66ce36), color-stop(100%, #3b7a1e));
@@ -927,7 +931,7 @@ body.bp a.button.matte-green:active, body.bp button.matte-green:active, body.bp 
   text-shadow: #081800 0px -1px -1px;
   color: white;
 }
-/* line 118, ../../../app/stylesheets/screen.sass */
+/* line 120, ../../../app/stylesheets/screen.sass */
 body.bp a.button.blue, body.bp button.blue, body.bp input.button.blue {
   border-radius: 32px;
   -moz-border-radius: 32px;

@@ -6,6 +6,8 @@ Rails::Initializer.run do |config|
   config.gem 'compass'
   config.gem 'haml'
   config.gem "bitly"
+  config.gem "rspec", :lib => false, :version => ">= 1.2.0"
+  config.gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
   config.time_zone = 'UTC'
 end
 
