@@ -27,12 +27,7 @@ class Bookmark < ActiveRecord::Base
   
   def attach_site!
     host = URI.parse(url).host
-    found_site = Site.find_by_url(host)
-    if found_site.nil?
-      create_site(:url => host)
-    else
-      self.site=found_site
-    end
+    self.site = Site.find_or_create_by_url(host)
   end
   
   def update_url_short!
