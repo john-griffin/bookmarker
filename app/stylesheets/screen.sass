@@ -36,6 +36,10 @@ body.bp
 			+hover-link
 	#content
 		+column(!blueprint_grid_columns)
+		.search
+			float: right
+			input.button
+				margin-right: 0.5em
 		.top
 			line-height: 3em
 			+column(24,true)
@@ -65,7 +69,7 @@ body.bp
 					.info
 						+column(20,true)
 		.sites
-			+column(14)
+			+column(24)
 			.site
 				+column(14)
 				line-height: 3em
@@ -79,10 +83,10 @@ body.bp
 					color: #f2f2f2
 				.link
 					font-size: 2em
-					+column(10)
+					+column(2,true)
 		.add
-			+column(8)
 			a
+				margin-right: 0.5em
 				float: right
 	form
 		+blueprint-form
@@ -108,6 +112,8 @@ body.bp
 			+fancy-button-colors-matte(!blue)
 		&.green
 			+fancy-button-colors(!green)
+		&.matte-green
+			+fancy-button-colors-matte(!green)
 		&.blue
 			+fancy-button-size(32px, 32px, 3px)
 			+fancy-button-colors(!blue)

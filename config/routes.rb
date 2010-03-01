@@ -5,7 +5,7 @@ ActionController::Routing::Routes.draw do |map|
     sites.resources :bookmarks, :only => [:index, :edit]
   end
   
-  map.resources :bookmarks, :except => [:index, :edit, :destroy, :show]
+  map.resources :bookmarks, :except => [:edit, :destroy, :show]
 
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'

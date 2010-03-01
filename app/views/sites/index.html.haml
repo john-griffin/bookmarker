@@ -1,9 +1,18 @@
+.search
+	- form_tag({:action => :index, :controller => :bookmarks}, :method => :get) do
+		= text_field_tag :search, nil, :class => "title"
+		= submit_tag 'Search', :class => "button matte-blue"
+	  
+.add
+	= link_to 'Bookmark somthing!', new_bookmark_path, :class => "button matte-green"
+
 .sites
+	- if @sites.empty?
+		.site
+			%p You have no bookmarks yet. Why don't you try bookmarking something.
 	- @sites.each do |site|
 		.site
 			.count
 				= site.bookmarks.count
 			.link
 				= link_to site.url, site_bookmarks_path(site)
-.add
-	= link_to 'Bookmark somthing!', new_bookmark_path, :class => "button matte-blue"
