@@ -19,9 +19,7 @@ class Bookmark < ActiveRecord::Base
   private
   
   def get_page(url)
-    a = Mechanize.new { |agent|
-      agent.user_agent_alias = 'Mac Safari'
-    }.get(url)
+    a = Mechanize.new { |agent| agent.user_agent_alias = 'Mac Safari'}.get(url)
   end
   
   def update_title!

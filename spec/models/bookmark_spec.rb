@@ -11,6 +11,13 @@ describe Bookmark do
     Bookmark.create!(@valid_attributes)
   end
   
+  it "should not be able to use invalid urls" do
+    assert_equal(false, Bookmark.create(:url => "http").valid?)
+    assert_equal(false, Bookmark.create(:url => "http://").valid?)
+    assert_equal(false, Bookmark.create(:url => "http://sddsfdsfd").valid?)
+    assert_equal(false, Bookmark.create(:url => "http://sdfajfbauoebwfodsbfdsfsdfdsfsd.com").valid?)
+  end
+  
   it "empty search should return nothing" do
     assert_equal([], Bookmark.search("", ["title", "url"]))
     assert_equal([], Bookmark.search(nil, ["title", "url"]))
