@@ -1,9 +1,16 @@
+.search
+	- form_tag({:action => :index, :controller => :bookmarks}, :method => :get) do
+		= text_field_tag :search, nil, :class => "title"
+		= submit_tag 'Search', :class => "button matte-blue"
+
 .top
 	.back
 		= link_to "<< Back to sites", sites_path
 	.add
-		= link_to 'Bookmark somthing!', new_bookmark_path, :class => "button matte-blue"
+		= link_to 'Bookmark something!', new_bookmark_path, :class => "button matte-green"
 .bookmarks
+	- if @bookmarks.empty?
+		%p No bookmarks found. Please try searching again.
 	- @bookmarks.each do |bookmark|
 		.bookmark
 			.title= link_to bookmark.title, edit_site_bookmark_path(bookmark.site, bookmark)
