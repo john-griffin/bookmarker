@@ -1,9 +1,9 @@
 # bookmarker
 
-A basic bookmarking web app. Supports:
+A clean Rails bookmarking app. Supports:
 
+*	Bookmark search
 *	Organisation of bookmarks by site
 *	Title retrieval
 *	Bit.ly short URL generation
-*	Tagging of bookmarks  
-
+*	Tagging of bookmarks
