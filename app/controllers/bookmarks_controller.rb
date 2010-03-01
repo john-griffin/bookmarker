@@ -1,7 +1,7 @@
 class BookmarksController < ApplicationController
   def index
     if params[:search]
-      @bookmarks = Bookmark.all(:conditions => ['title like ?', "%"+params[:search]+"%"])
+      @bookmarks = Bookmark.search(params[:search], ['title', 'url'])
     else
       @bookmarks = Site.find(params[:site_id]).bookmarks
     end

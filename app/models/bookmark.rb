@@ -1,4 +1,7 @@
 class Bookmark < ActiveRecord::Base
+  
+  include Bookmarker::Search
+  
   belongs_to :site
   
   acts_as_taggable
