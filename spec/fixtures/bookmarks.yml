@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  url: MyString
+  url_short: MyString
+  title: MyString
+  site_id: 1
+
+two:
+  url: MyString
+  url_short: MyString
+  title: MyString
+  site_id: 1
